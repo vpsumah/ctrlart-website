@@ -1,1 +1,537 @@
-<h1>YOOOOO :D</h1>
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <!--
+        Métadonnées de base.
+        Elles disent au navigateur comment lire la page.
+    -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CTRL Art Studio</title>
+
+    <!-- Police utilisée pour le mot "Art" -->
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+<link href="https://fonts.googleapis.com/css2?family=Aguafina+Script&family=Antonio:wght@300;400&family=Cinzel:wght@400;500;600&family=Inter:wght@300;400;500;600;700&family=Montserrat:wght@400;500;600&display=swap" rel="stylesheet">
+    <!--
+        Connexion au fichier CSS.
+        Le HTML garde la structure.
+        Le CSS garde le visuel.
+    -->
+    <link rel="stylesheet" href="Style.css">
+</head>
+
+<body class="home-page">
+
+    <!-- ======================================================
+         HEADER
+         Barre du haut avec le logo et la navigation.
+    ======================================================= -->
+    <header class="site-header">
+
+        <!-- Logo temporaire. Plus tard, on pourra mettre une vraie image. -->
+        <a href="#" class="site-logo">
+            CTRL <span>//</span> Art
+        </a>
+
+        <!-- Menu principal. Les liens pointent vers des sections de la même page. -->
+        <nav class="main-nav">
+            <a href="#home" class="active">Accueil</a>
+            <a href="#projects">Projets</a>
+            <a href="#about">À propos</a>
+            <a href="#services">Services</a>
+            <a href="#contact">Contact</a>
+        </nav>
+
+    </header>
+
+    <!-- ======================================================
+         MAIN
+         Contenu principal de la page.
+    ======================================================= -->
+    <main>
+
+        <!-- ==================================================
+             HERO
+             Première grande section visible en arrivant.
+        =================================================== -->
+        <section id="home" class="hero">
+
+            <!-- Bloc gauche : branding principal -->
+            <!-- Bloc logo principal du hero -->
+<div class="hero-brand">
+
+    <!-- Titre principal composé de 3 morceaux pour pouvoir les styliser séparément -->
+<div class="hero-logo-title">
+
+    <div class="hero-logo-ctrl">
+        CTRL
+    </div>
+
+    <div class="hero-logo-slashes">
+        //
+    </div>
+
+    <div class="hero-logo-art">
+        Art
+    </div>
+
+</div>
+
+    <!-- Sous-titre STUDIO sous le logo -->
+    <div class="hero-logo-subtitle">
+    <span>✦</span>
+    <span>STUDIO</span>
+    <span>✦</span>
+
+</div>
+
+</div>
+
+            <!-- Bloc droit : texte de présentation + bouton -->
+            <div class="hero-intro">
+                <p class="eyebrow">Graphisme & Webdesign</p>
+
+                <p>
+                    Création d’identités visuelles et de sites web uniques
+                    pour des marques qui osent se démarquer!
+                </p>
+
+                <a href="#projects" class="button">
+                    Voir mes projets
+                </a>
+            </div>
+
+        </section>
+
+        <!-- ==================================================
+             PROJETS À LA UNE
+        =================================================== -->
+        <section id="projects" class="featured-projects">
+
+            <h2>✦ Projets à la une ✦</h2>
+
+            <div class="project-grid">
+
+                <a href="projects/pages-de-minuit.html" class="project-card">
+                   <div class="project-image">
+
+    <img
+        src="assets/images/projects/pages-de-minuit/cover.png"
+        alt="PagesDeMinuit">
+
+</div>
+
+                    <div class="project-info">
+
+    <h3>Les Pages de Minuit</h3>
+
+    <p class="project-type">
+        Librairie indépendante
+    </p>
+
+    <div class="project-meta">
+
+        <span>
+            <i data-lucide="palette"></i>
+            Branding
+        </span>
+
+        <span>
+            <i data-lucide="globe"></i>
+            Site web
+        </span>
+
+        <span>
+            <i data-lucide="sparkles"></i>
+            PROJET FICTIF
+        </span>
+
+    </div>
+
+</div>
+                </a>
+<!-------------2ND FEATURE-------------->
+   <a href="projects/bena.html" class="project-card">
+
+    <div class="project-image">
+        <img
+            src="assets/images/projects/bena/cover.png"
+            alt="Spell It Out">
+    </div>
+
+    <div class="project-info">
+
+        <h3>BENA - Bien-Être Neuroatypique</h3>
+
+        <p class="project-type">
+            Vulgarisation psychosociale
+        </p>
+
+        <div class="project-meta">
+
+            <span>
+                <i data-lucide="palette"></i>
+                Branding
+            </span>
+
+            <span>
+                <i data-lucide="globe"></i>
+                Site web
+            </span>
+
+            <span>
+                <i data-lucide="book-open"></i>
+                PROJET RÉEL
+            </span>
+
+        </div>
+
+    </div>
+
+</a>
+<!------------------3RD FEATURE------------------------>
+                <a href="projects/spell-it-out.html" class="project-card">
+
+    <div class="project-image">
+        <img
+            src="assets/images/projects/spell-it-out/cover.png"
+            alt="Spell It Out">
+    </div>
+
+    <div class="project-info">
+
+        <h3>Spell It Out</h3>
+
+        <p class="project-type">
+            Maison d’édition indépendante
+        </p>
+
+        <div class="project-meta">
+
+            <span>
+                <i data-lucide="palette"></i>
+                Branding
+            </span>
+
+            <span>
+                <i data-lucide="globe"></i>
+                Site web
+            </span>
+
+            <span>
+                <i data-lucide="book-open"></i>
+                PROJET RÉEL
+            </span>
+
+        </div>
+
+    </div>
+
+</a>
+
+            </div>
+
+            <a href="projects.html" class="button secondary-button">
+                Voir tous les projets
+            </a>
+
+        </section>
+
+<section id="about" class="about-section">
+
+    <div class="about-container">
+
+        <div class="about-left">
+
+            <div class="about-photos">
+
+    <div class="about-photo small-photo photo-one">
+        <img src="assets/images/about-photo-1.png" alt="Portrait CTRL Art Studio">
+    </div>
+
+    <div class="about-photo small-photo photo-two">
+        <img src="assets/images/about-photo-2.png" alt="Portrait CTRL Art Studio">
+    </div>
+
+</div>
+
+            <div class="about-text">
+                <p class="section-label">À propos</p>
+
+                <h2>
+                    Passionnés par le design, le web<br>
+                    et les expériences digitales
+                </h2>
+
+                <p>
+                    Graphiste, webdesigner et web programmer freelance, nous aidons les marques à révéler
+                    leur identité à travers des visuels percutants et des sites web sur mesure.
+                </p>
+
+            </div>
+
+        </div>
+
+        <div class="about-right">
+
+            <p class="section-label">Compétences</p>
+
+            <div class="skills-grid">
+
+                <div class="skill">
+                    <div class="skill-icon">Fg</div>
+                   <span>Figma</span>
+                </div>
+
+                <div class="skill">
+                    <div class="skill-icon">Br</div>
+                    <span>Identité visuelle (branding)</span>
+                </div>
+
+                <div class="skill">
+                    <div class="skill-icon">DW</div>
+                    <span>Design Web</span>
+                </div>
+
+                <div class="skill">
+                    <div class="skill-icon">RS</div>
+                   <span>Design pour réseaux sociaux</span>
+                </div>
+
+                <div class="skill">
+                    <div class="skill-icon">Ill</div>
+                    <span>Illustration / Direction artistique</span>
+                </div>
+
+                <div class="skill">
+                    <div class="skill-icon">Tg</div>
+                 <span>Typographie</span>
+                </div>
+
+                <div class="skill">
+                    <div class="skill-icon">UX</div>
+                   <span>User Experience</span>
+                </div>
+
+                <div class="skill">
+                    <div class="skill-icon">Web</div>
+                    <span>HTML / CSS / JAVASCRIPT</span>
+                </div>
+
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+<section id="services" class="services-section">
+
+    <div class="services-container">
+
+        <p class="section-label">Services</p>
+
+        <h2>
+            Ce que nous pouvons créer pour votre entreprise
+        </h2>
+
+
+        <div class="services-grid">
+
+            <article class="service-card">
+
+                <div class="service-icon">
+                    <i data-lucide="palette"></i>
+                </div>
+
+                <h3>LOGO PERSONNALISÉ</h3>
+
+                <p>
+                    Création d'un logo unique, adapté à ton univers visuel et à ton identité
+                </p>
+
+            </article>
+
+            <article class="service-card">
+
+                <div class="service-icon">
+                    <i data-lucide="laptop-minimal-check"></i>
+                </div>
+
+                <h3>BANNIÈRE / COUVERTURE</h3>
+
+                <p>
+                    Une bannière adaptée à une plateforme au choix (facebook, twitch, youtube, etc.)
+                <small>*+20$ par format de bannière suplémentaire</small>
+                </p>
+
+            </article>
+
+            <article class="service-card">
+
+                <div class="service-icon">
+                    <i data-lucide="user-star"></i>
+                </div>
+
+                <h3>PHOTO DE PROFIL / AVATAR</h3>
+
+                <p>
+                    Visuel de profil simple et cohérent avec ton branding
+                </p>
+
+            </article>
+
+               <article class="service-card">
+
+                <div class="service-icon">
+                    <i data-lucide="file-stack"></i>
+                </div>
+
+                <h3>BUNDLE BRANDING</h3>
+
+                <p>
+                    Un logo, une bannière et une photo de profil assortis pour une identité visuelle complète.
+                </p>
+
+            </article>
+
+            <article class="service-card">
+
+                <div class="service-icon">
+                    <i data-lucide="wallpaper"></i>
+                </div>
+
+                <h3>VISUEL DE RÉSEAU SOCIAUX</h3>
+
+                <p>
+                    Template, promotion, publicité, annonce ou visuel personnalisé. 
+                    Le prix varie selon la complexité du projet.
+                </p>
+
+            </article>
+
+
+              <article class="service-card">
+
+                <div class="service-icon">
+                   <i data-lucide="monitor-cloud"></i>
+                </div>
+
+                <h3>CRÉATION DE SITE WEB</h3>
+
+                <p>
+                    Création d'un site web moderne et dynamique, au goût du jour. 
+                </p>
+
+            </article>
+
+
+        </div>
+
+    </div>
+
+</section>
+
+<section id="contact" class="contact-section">
+
+    <div class="contact-container">
+
+        <div class="contact-copy">
+            <p class="section-label">Contact</p>
+
+            <h2>Un projet en tête?</h2>
+
+            <p class="contact-intro">
+                Parlons de votre projet et voyons comment lui donner vie.
+                Que ce soit pour une identité visuelle, un site web ou une idée encore sur papier,
+                j’aimerais en discuter avec vous.
+            </p>
+        </div>
+
+        <div class="contact-card">
+
+            <div class="contact-item">
+                <span>✉</span>
+                <div>
+                    <small>Courriel</small>
+                    <p>info@ctrlart.studio</p>
+                </div>
+            </div>
+
+            <div class="contact-item">
+                <span>◎</span>
+                <div>
+                    <small>Instagram</small>
+                    <p><a href="https://www.instagram.com/studioctrlart/">studioctrlart</a></p>
+                </div>
+            </div>
+
+            <a href="mailto:info@ctrlart.studio" class="button contact-button">
+                M’écrire
+            </a>
+
+        </div>
+
+    </div>
+
+</section>
+
+<footer class="site-footer">
+
+    <div class="footer-container">
+
+        <div class="footer-brand">
+            <a href="#home" class="site-logo footer-logo">
+                CTRL <span>//</span> Art
+            </a>
+        </div>
+
+        <div class="footer-column">
+            <h3>Navigation</h3>
+
+            <a href="#home">Accueil</a>
+            <a href="#projects">Projets</a>
+            <a href="#about">À propos</a>
+            <a href="#services">Services</a>
+            <a href="#contact">Contact</a>
+        </div>
+
+        <div class="footer-column">
+            <h3>Services</h3>
+
+            <a href="#services">BRANDING</a>
+            <a href="#services">SITE WEB</a>
+            <a href="#services">UX D'EXCELLENCE</a>
+        </div>
+
+        <div class="footer-column">
+            <h3>Suivez-moi</h3>
+
+            <div class="social-links">
+                <a href="https://www.instagram.com/studioctrlart/">IG</a>
+                <a href="https://www.facebook.com/ctrlartstudioqc/">Fb</a>
+            </div>
+        </div>
+
+    </div>
+
+    <p class="footer-copy">
+        © 2026 CTRL Art Studio · Tous droits réservés.
+    </p>
+
+</footer>
+
+
+    </main>
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <script>
+lucide.createIcons();
+</script>
+<script src="script.js"></script>
+</body>
+</html>
