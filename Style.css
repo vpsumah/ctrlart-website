@@ -1233,21 +1233,23 @@ img {
 
 .website-preview {
     position: relative;
-    max-width: 1200px;
+    max-width: 1000px;
     margin: 70px auto 60px;
 }
 
 .desktop-preview {
-    width: 100%;
     display: block;
+    width: 88%;
+    margin: 0 auto;
 }
 
 .mobile-preview {
     position: absolute;
-    right: 40px;
-    bottom: -20px;
 
-    width: 210px;
+    width: 150px;
+
+    right: 10%;
+    bottom: -10px;
 }
 
 .website-gallery {
@@ -1259,16 +1261,20 @@ img {
     gap: 18px;
 }
 
-.website-gallery img {
-    width: 100%;
-    display: block;
+.website-gallery img{
 
-    border-radius: 12px;
-    transition: .35s;
+    transition:.3s;
+
+    cursor:zoom-in;
+
 }
 
-.website-gallery img:hover {
-    transform: translateY(-6px);
+.website-gallery img:hover{
+
+    transform:translateY(-6px);
+
+    box-shadow:0 18px 40px rgba(0,0,0,.15);
+
 }
 
 .website-button {
@@ -1649,4 +1655,94 @@ img {
     .mockup-grid {
         grid-template-columns: 1fr;
     }
+}
+
+/* ==========================================================
+   LIGHTBOX
+========================================================== */
+
+.lightbox{
+
+    position:fixed;
+    inset:0;
+
+    display:none;
+    justify-content:center;
+    align-items:center;
+
+    background:rgba(0,0,0,.9);
+
+    z-index:9999;
+
+}
+
+.lightbox.active{
+
+    display:flex;
+
+}
+
+.lightbox img{
+
+    max-width:90%;
+    max-height:85vh;
+
+    border-radius:12px;
+
+    box-shadow:0 30px 80px rgba(0,0,0,.5);
+
+}
+
+.lightbox button{
+
+    position:absolute;
+
+    background:none;
+    border:none;
+
+    color:white;
+
+    font-size:3rem;
+
+    cursor:pointer;
+
+    transition:.2s;
+
+}
+
+.lightbox button:hover{
+
+    opacity:.7;
+
+}
+
+.lightbox-close{
+
+    top:40px;
+    right:50px;
+
+}
+
+.lightbox-prev{
+
+    left:40px;
+
+}
+
+.lightbox-next{
+
+    right:40px;
+
+}
+
+.lightbox-counter{
+
+    position:absolute;
+
+    bottom:35px;
+
+    color:white;
+
+    letter-spacing:.15em;
+
 }
