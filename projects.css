@@ -528,3 +528,58 @@ body {
         width: 100%;
     }
 }
+
+/* 1. Force le lien à se comporter comme un bloc dans la grille */
+.compact-grid a.compact-card-link {
+    display: block;
+    text-decoration: none;
+    color: inherit;
+}
+
+/* 2. Fixe la taille de la carte */
+.compact-card {
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+    border-radius: 12px;
+    background: rgba(255, 255, 255, 0.03);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+/* 3. Limite STRICTEMENT l'image à sa zone de 170px */
+.compact-image {
+    width: 100%;
+    height: 170px;
+    overflow: hidden;
+    position: relative;
+}
+
+.compact-image img {
+    width: 100% !important;
+    height: 100% !important;
+    object-fit: cover !important; /* Force l'image à se recadrer sans déborder */
+    display: block;
+}
+
+/* 4. Règle la couleur du titre pour supprimer le mauve */
+.compact-card h3,
+.compact-card-link:visited h3 {
+    color: #ffffff !important; /* Ou la couleur de ton choix */
+    margin: 12px 0 4px 0;
+}
+
+.compact-card p {
+    color: rgba(255, 255, 255, 0.7);
+}
+
+
+.compact-card:hover .compact-image img {
+    transform: scale(1.08);
+}
+
+.compact-card-link,
+.compact-card-link:visited {
+    color: inherit; /* Ou var(--white) / #ffffff selon tes préférences */
+    text-decoration: none;
+}
+

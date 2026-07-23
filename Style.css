@@ -494,24 +494,6 @@ img {
         linear-gradient(135deg, #f5efe4, #d6c0a2);
 }
 
-.compact-image {
-    height: 170px;
-    overflow: hidden;
-}
-
-.compact-image img {
-    width: 100%;
-    height: 100%;
-
-    object-fit: cover;
-    display: block;
-
-    transition: .35s;
-}
-
-.compact-card:hover img {
-    transform: scale(1.08);
-}
 
 /* ==========================================================
    06 À PROPOS / COMPÉTENCES
@@ -1427,6 +1409,450 @@ img {
     line-height: 1.6;
 }
 
+/* ==========================================================
+   PROJET ONE MORE BITE
+   Couleurs et adaptations propres à la page du projet.
+========================================================== */
+
+.one-more-bite {
+
+    --omb-darkest: #120b07;
+    --omb-dark: #1a100b;
+    --omb-brown: #3b2418;
+    --omb-brown-light: #60402d;
+
+    --omb-gold-dark: #8f642f;
+    --omb-gold: #a77b3d;
+    --omb-gold-light: #d5b680;
+
+    --omb-cream: #e8d8bc;
+    --omb-paper: #d8c5a6;
+    --omb-text-dark: #2d1a12;
+
+    background: var(--omb-dark);
+}
+
+
+/* ==========================================================
+   HERO
+========================================================== */
+
+.one-more-bite .project-hero {
+
+    background:
+
+        radial-gradient(
+            circle at 80% 30%,
+            rgba(167, 123, 61, 0.15),
+            transparent 35%
+        ),
+
+        linear-gradient(
+            135deg,
+            #120b07 0%,
+            #28170e 55%,
+            #160d08 100%
+        );
+
+    color: var(--omb-cream);
+
+}
+
+.one-more-bite .project-label {
+
+    color: var(--omb-gold-light);
+
+}
+
+.one-more-bite .project-hero h1 {
+
+    color: var(--omb-cream);
+
+    font-family:
+        "Cormorant Garamond",
+        Georgia,
+        serif;
+
+    font-weight: 500;
+
+}
+
+.one-more-bite .project-category {
+
+    color: var(--omb-gold-light);
+
+}
+
+.one-more-bite .project-description {
+
+    color: rgba(232, 216, 188, 0.82);
+
+}
+
+.one-more-bite .project-meta span {
+
+    color: var(--omb-paper);
+
+    background: rgba(232, 216, 188, 0.06);
+
+    border: 1px solid rgba(213, 182, 128, 0.25);
+
+}
+
+.one-more-bite .project-meta svg {
+
+    color: var(--omb-gold);
+
+}
+
+.one-more-bite .project-cover {
+
+    background: rgba(232, 216, 188, 0.05);
+
+    border: 1px solid rgba(213, 182, 128, 0.18);
+
+    box-shadow:
+        0 30px 70px rgba(0, 0, 0, 0.38);
+
+}
+
+.one-more-bite .project-cover img {
+
+    width: 100%;
+    height: 100%;
+
+    object-fit: cover;
+
+}
+
+
+/* ==========================================================
+   BOUTONS
+========================================================== */
+
+.one-more-bite .button,
+.one-more-bite .btn-primary {
+
+    color: var(--omb-text-dark);
+
+    background:
+        linear-gradient(
+            135deg,
+            var(--omb-gold-light),
+            #bd965b
+        );
+
+    border: 1px solid rgba(255, 255, 255, 0.14);
+
+    box-shadow:
+        0 12px 30px rgba(18, 11, 7, 0.28);
+
+}
+
+.one-more-bite .button:hover,
+.one-more-bite .btn-primary:hover {
+
+    color: var(--omb-text-dark);
+
+    background:
+        linear-gradient(
+            135deg,
+            #ead09f,
+            #cca66c
+        );
+
+    transform: translateY(-3px);
+
+}
+
+
+/* ==========================================================
+   SECTIONS
+========================================================== */
+
+.one-more-bite .project-section {
+
+    background: #efe3cf;
+
+    color: var(--omb-text-dark);
+
+}
+
+.one-more-bite .project-section:nth-of-type(even) {
+
+    background: #e2ceb0;
+
+}
+
+.one-more-bite .section-heading h2 {
+
+    color: var(--omb-text-dark);
+
+    font-family:
+        "Cormorant Garamond",
+        Georgia,
+        serif;
+
+}
+
+.one-more-bite .section-heading svg {
+
+    color: var(--omb-gold-dark);
+
+}
+
+.one-more-bite .section-intro {
+
+    color: rgba(45, 26, 18, 0.76);
+
+}
+
+
+/* ==========================================================
+   IDENTITÉ VISUELLE
+========================================================== */
+
+.one-more-bite .identity-item {
+
+    background:
+        linear-gradient(
+            145deg,
+            rgba(255, 255, 255, 0.5),
+            rgba(213, 182, 128, 0.18)
+        );
+
+    border: 1px solid rgba(96, 64, 45, 0.16);
+
+    box-shadow:
+        0 18px 40px rgba(59, 36, 24, 0.1);
+
+}
+
+.one-more-bite .identity-item h3 {
+
+    color: var(--omb-brown);
+
+}
+
+.one-more-bite .identity-item img {
+
+    max-height: 330px;
+
+    object-fit: contain;
+
+}
+
+.one-more-bite .swatch span {
+
+    border:
+        1px solid rgba(45, 26, 18, 0.18);
+
+    box-shadow:
+        0 8px 18px rgba(45, 26, 18, 0.12);
+
+}
+
+.one-more-bite .swatch p {
+
+    color: rgba(45, 26, 18, 0.72);
+
+}
+
+.font-cormorant {
+
+    font-family:
+        "Cormorant Garamond",
+        Georgia,
+        serif;
+
+}
+
+.font-montserrat {
+
+    font-family:
+        "Montserrat",
+        Arial,
+        sans-serif;
+
+}
+
+.one-more-bite .font-preview-serif {
+
+    font-size: 1.35rem;
+
+}
+
+
+/* ==========================================================
+   PRÉSENTATION DU SITE
+========================================================== */
+
+.one-more-bite .website-section {
+
+    background:
+
+        radial-gradient(
+            circle at top right,
+            rgba(167, 123, 61, 0.2),
+            transparent 35%
+        ),
+
+        linear-gradient(
+            135deg,
+            #160d08,
+            #2a190f
+        );
+
+    color: var(--omb-cream);
+
+}
+
+.one-more-bite .website-section .section-heading h2 {
+
+    color: var(--omb-cream);
+
+}
+
+.one-more-bite .website-section .section-heading svg {
+
+    color: var(--omb-gold-light);
+
+}
+
+.one-more-bite .website-section .section-intro {
+
+    color: rgba(232, 216, 188, 0.78);
+
+}
+
+.one-more-bite .desktop-preview,
+.one-more-bite .mobile-preview {
+
+    filter:
+        drop-shadow(
+            0 25px 35px rgba(0, 0, 0, 0.38)
+        );
+
+}
+
+.one-more-bite .website-gallery img {
+
+    border:
+        1px solid rgba(213, 182, 128, 0.18);
+
+    box-shadow:
+        0 20px 40px rgba(0, 0, 0, 0.28);
+
+}
+
+
+/* ==========================================================
+   MOCKUPS
+========================================================== */
+
+.one-more-bite .mockup-grid figure {
+
+    background: rgba(255, 255, 255, 0.35);
+
+    border:
+        1px solid rgba(59, 36, 24, 0.15);
+
+    box-shadow:
+        0 18px 40px rgba(59, 36, 24, 0.12);
+
+}
+
+.one-more-bite .mockup-grid img {
+
+    aspect-ratio: 4 / 3;
+
+    object-fit: cover;
+
+}
+
+.one-more-bite .mockup-grid figcaption {
+
+    color: var(--omb-brown);
+
+}
+
+
+/* ==========================================================
+   NAVIGATION ENTRE LES PROJETS
+========================================================== */
+
+.one-more-bite .project-navigation {
+
+    background:
+
+        linear-gradient(
+            90deg,
+            #120b07,
+            #2a190f,
+            #120b07
+        );
+
+    border-top:
+        1px solid rgba(213, 182, 128, 0.18);
+
+}
+
+.one-more-bite .project-nav-link span {
+
+    color: rgba(232, 216, 188, 0.62);
+
+}
+
+.one-more-bite .project-nav-link strong {
+
+    color: var(--omb-cream);
+
+}
+
+.one-more-bite .project-nav-link:hover strong {
+
+    color: var(--omb-gold-light);
+
+}
+
+.one-more-bite .project-nav-grid {
+
+    color: var(--omb-gold-light);
+
+    border:
+        1px solid rgba(213, 182, 128, 0.28);
+
+}
+
+.one-more-bite .project-nav-grid:hover {
+
+    color: var(--omb-text-dark);
+
+    background: var(--omb-gold-light);
+
+}
+
+
+/* ==========================================================
+   RESPONSIVE
+========================================================== */
+
+@media (max-width: 800px) {
+
+    .one-more-bite .project-cover {
+
+        max-height: none;
+
+    }
+
+    .one-more-bite .identity-item img {
+
+        max-height: 250px;
+
+    }
+
+}
+
 
 /* ==========================================================
    SPÉCIMENS DE POLICES
@@ -1745,4 +2171,49 @@ img {
 
     letter-spacing:.15em;
 
+}
+
+/* --- AMÉLIORATION DES CARTES D'IDENTITÉ VISUELLE --- */
+
+/* 1. Ajout de padding interne et alignement flex */
+.one-more-bite .identity-item {
+    padding: 28px 24px !important; /* Respiration interne */
+    display: flex;
+    flex-direction: column;
+    border-radius: 16px; /* Coins plus doucement arrondis */
+    height: 100%; /* S'assure que toutes les cartes ont la même hauteur */
+}
+
+/* 2. Espace sous les titres de cartes (Logo principal, Monogramme, etc.) */
+.one-more-bite .identity-item h3 {
+    margin-top: 0;
+    margin-bottom: 20px !important;
+}
+
+/* 3. Ajustement de l'image du logo pour ne pas coller aux bords */
+.one-more-bite .identity-item img {
+    width: 100%;
+    max-height: 220px;
+    object-fit: contain;
+    margin: auto 0; /* Centre l'image verticalement dans sa carte */
+}
+
+/* 4. Ajustement de la grille des palettes de couleurs */
+.one-more-bite .palette {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 8px !important;
+    margin-top: 10px;
+}
+
+.one-more-bite .swatch p {
+    font-size: 0.65rem !important; /* Évite que les codes HEX ne se chevauchent */
+}
+
+/* --- COULEUR DU TEXTE DE TYPOGRAPHIE (BRUN FONCÉ) --- */
+
+.one-more-bite .identity-item .font-cormorant,
+.one-more-bite .identity-item .font-montserrat,
+.one-more-bite .identity-item .font-preview-serif {
+    color: var(--omb-text-dark) !important; /* Couleur brun foncé #2D1A12 */
 }
