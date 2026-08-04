@@ -1683,6 +1683,7 @@ img {
 }
 
 
+
 /* ==========================================================
    PRÉSENTATION DU SITE
 ========================================================== */
@@ -2234,5 +2235,139 @@ img {
     color: var(--omb-text-dark) !important; /* Couleur brun foncé #2D1A12 */
 }
 
+/* ==========================================================
+   SWEET PIXEL
+========================================================== */
 
+.sweet-pixel{
 
+    --project-bg:#fdefe5;
+
+    --project-text:#79594d;
+    --project-heading:#79594d;
+    --project-muted:rgba(121,89,77,.78);
+    --project-border:rgba(121,89,77,.15);
+
+    --accent-color:#f69a78;
+    --accent-light:#ffd7c6;
+
+    --project-title-font:"Baloo 2", cursive;
+    --project-body-font:"Nunito", sans-serif;
+    --project-menu-font:"Nunito", sans-serif;
+    --project-handwriting-font:"Nunito", sans-serif;
+
+}
+
+.sweet-pixel .project-section{
+
+    background:#fff8f4;
+    color:var(--project-text);
+
+}
+
+.sweet-pixel .project-section:nth-of-type(even){
+
+    background:#fdefe5;
+
+}
+
+.sweet-pixel .section-heading h2{
+
+    color:var(--project-heading);
+
+}
+
+.sweet-pixel .section-heading svg{
+
+    color:var(--accent-color);
+
+}
+
+.sweet-pixel .section-intro{
+
+    color:var(--project-muted);
+
+}
+
+.sweet-pixel .identity-item{
+
+    background:white;
+
+    border:1px solid rgba(121,89,77,.12);
+
+    border-radius:18px;
+
+    padding:28px;
+
+    box-shadow:0 12px 30px rgba(121,89,77,.08);
+
+}
+
+.sweet-pixel .identity-item h3{
+
+    color:var(--project-heading);
+
+}
+
+.sweet-pixel .swatch span{
+
+    border:none;
+
+    box-shadow:0 6px 18px rgba(0,0,0,.08);
+
+}
+
+/* ==========================================================
+   LIENS SWEET PIXEL
+========================================================== */
+
+.sweet-pixel a{
+    color:#79594d;
+}
+
+.sweet-pixel a:hover{
+    color:#f69a78;
+}
+
+.sweet-pixel .project-hero h1 .sweet-title {
+    color: #f69a78;
+}
+
+.sweet-pixel .project-hero h1 .pixel-title {
+    color: #79594d;
+}
+
+.sweet-pixel .project-hero h1 .atelier-title {
+    color: #f69a78;
+}
+
+.sweet-pixel .sweetpixel-title{
+
+    line-height:.95;
+
+}
+
+.sweet-pixel .sweet-title{
+
+    font-family:"Fredoka", sans-serif;
+    font-weight:700;
+    color:#f69a78;
+
+}
+
+.sweet-pixel .pixel-title{
+
+    font-family:"Nunito", sans-serif;
+    font-weight:600;
+    color:#79594d;
+
+}
+
+.sweet-pixel .atelier-title{
+
+    font-family:"Fredoka", sans-serif;
+    font-weight:700;
+    letter-spacing:.2em;
+    color:#f69a78;
+
+}
