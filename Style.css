@@ -2371,3 +2371,19 @@ img {
     color:#f69a78;
 
 }
+
+.font-fredoka{
+    font-family:"Fredoka", sans-serif;
+    font-weight:700;
+}
+
+.font-nunito-semibold{
+    font-family:"Nunito", sans-serif;
+    font-weight:600;
+}
+
+.font-fredoka-spaced{
+    font-family:"Fredoka", sans-serif;
+    font-weight:700;
+    letter-spacing:.2em;
+}
