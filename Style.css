@@ -2387,3 +2387,550 @@ img {
     font-weight:700;
     letter-spacing:.2em;
 }
+
+/* ==========================================================
+   SL.APP
+========================================================== */
+
+.sl-app {
+
+    --project-bg: #050505;
+
+    --project-text: #ffffff;
+    --project-heading: #ffffff;
+    --project-muted: rgba(255,255,255,.72);
+    --project-border: rgba(255,255,255,.14);
+
+    --accent-color: #d71920;
+    --accent-light: #ff4545;
+
+    --project-title-font: "Inter", sans-serif;
+    --project-body-font: "Inter", sans-serif;
+    --project-menu-font: "Inter", sans-serif;
+    --project-handwriting-font: "Inter", sans-serif;
+}
+
+
+/* HERO */
+
+.sl-app .project-hero {
+
+    background:
+        radial-gradient(
+            circle at 80% 25%,
+            rgba(215,25,32,.12),
+            transparent 30%
+        ),
+        linear-gradient(
+            135deg,
+            #050505,
+            #111111
+        );
+
+}
+
+
+/* TITRE */
+
+.sl-app .project-hero h1 {
+
+    font-weight: 700;
+    letter-spacing: -.05em;
+
+}
+
+
+/* LABEL */
+
+.sl-app .project-label {
+
+    color: #d71920;
+    font-weight: 600;
+
+}
+
+
+/* CATÉGORIE */
+
+.sl-app .project-category {
+
+    color: rgba(255,255,255,.82);
+
+}
+
+
+/* COVER */
+
+.sl-app .project-cover {
+
+    border-radius: 4px;
+
+    border:
+        1px solid rgba(255,255,255,.12);
+
+    box-shadow:
+        0 30px 80px rgba(0,0,0,.55);
+
+}
+
+
+/* SECTIONS */
+
+.sl-app .project-section {
+
+    background:#f3f3f3;
+
+    color:#111111;
+
+}
+
+
+.sl-app .project-section:nth-of-type(even) {
+
+    background:#ffffff;
+
+}
+
+
+/* TITRES DE SECTIONS */
+
+.sl-app .project-section .section-heading h2 {
+
+    color:#111111;
+
+    font-weight:700;
+
+    letter-spacing:-.02em;
+
+}
+
+
+.sl-app .project-section .section-heading svg {
+
+    color:#d71920;
+
+}
+
+
+/* TEXTE */
+
+.sl-app .project-section .section-intro {
+
+    color:rgba(0,0,0,.68);
+
+}
+
+
+/* IDENTITÉ */
+
+.sl-app .identity-item {
+
+    color:#111111;
+
+}
+
+.sl-app .identity-item h3 {
+
+    color:rgba(0,0,0,.62);
+
+}
+
+.sl-app .identity-item h4 {
+
+    color:#111111;
+
+}
+
+.sl-app .identity-item p {
+
+    color:rgba(0,0,0,.72);
+
+}
+
+
+/* SWATCHES */
+
+.sl-app .swatch span {
+
+    border:
+        1px solid rgba(0,0,0,.14);
+
+}
+
+.sl-app .swatch p {
+
+    color:#444444;
+
+}
+
+
+/* SECTION SITE WEB */
+
+.sl-app .website-section {
+
+    background:#080808;
+
+    color:#ffffff;
+
+}
+
+
+.sl-app .website-section .section-heading h2 {
+
+    color:#ffffff;
+
+}
+
+
+.sl-app .website-section .section-intro {
+
+    color:rgba(255,255,255,.72);
+
+}
+
+
+/* SCREENSHOTS */
+
+.sl-app .website-gallery img {
+
+    border-radius:4px;
+
+    border:
+        1px solid rgba(255,255,255,.12);
+
+    box-shadow:
+        0 20px 45px rgba(0,0,0,.38);
+
+}
+
+
+/* BOUTONS */
+
+.sl-app .button,
+.sl-app .btn-primary {
+
+    background:#d71920;
+
+    border-color:#d71920;
+
+    color:#ffffff;
+
+    border-radius:999px;
+
+}
+
+
+.sl-app .button:hover,
+.sl-app .btn-primary:hover {
+
+    background:#f1262d;
+
+    border-color:#f1262d;
+
+}
+
+
+/* NAVIGATION ENTRE PROJETS */
+
+.sl-app .project-navigation {
+
+    background:#080808;
+
+    border-top:
+        1px solid rgba(255,255,255,.12);
+
+}
+
+
+.sl-app .project-nav-link {
+
+    color:rgba(255,255,255,.60);
+
+}
+
+
+.sl-app .project-nav-link strong {
+
+    color:#ffffff;
+
+}
+
+
+.sl-app .project-nav-link:hover strong {
+
+    color:#d71920;
+
+}
+
+
+.sl-app .project-nav-grid {
+
+    color:#ffffff;
+
+    border-color:
+        rgba(255,255,255,.20);
+
+}
+
+
+
+
+
+
+
+/* ==========================================================
+   PAGE PALETTES
+========================================================== */
+
+.palettes-page {
+    min-height: 100vh;
+    background:
+        radial-gradient(circle at 15% 20%, rgba(107,231,255,.08), transparent 28%),
+        radial-gradient(circle at 85% 25%, rgba(217,92,255,.12), transparent 30%),
+        #040514;
+}
+
+
+/* ---------- Hero ---------- */
+
+.palettes-hero {
+    max-width: 1180px;
+    margin: 0 auto;
+
+    padding: 190px 72px 80px;
+
+    text-align: center;
+}
+
+.palettes-hero h1 {
+    margin: 0 0 24px;
+
+    font-family: var(--site-menu-font);
+    font-size: clamp(42px, 6vw, 78px);
+    font-weight: 400;
+
+    text-transform: uppercase;
+    letter-spacing: 4px;
+}
+
+.palettes-hero p:not(.section-label) {
+    max-width: 720px;
+    margin: 0 auto;
+
+    color: rgba(255,255,255,.72);
+
+    font-size: 17px;
+    line-height: 1.8;
+}
+
+
+/* ---------- Galerie ---------- */
+
+.palettes-section {
+    padding: 20px 72px 120px;
+}
+
+.palette-gallery {
+    max-width: 1100px;
+    margin: 0 auto;
+
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(400px, 500px));
+
+    justify-content: center;
+    gap: 36px;
+}
+
+
+/* ---------- Carte ---------- */
+
+.palette-card {
+    overflow: hidden;
+
+    border: 1px solid rgba(255,255,255,.14);
+    border-radius: 18px;
+
+    background: rgba(255,255,255,.035);
+
+    box-shadow:
+        0 18px 40px rgba(0,0,0,.28),
+        0 0 30px rgba(120,60,220,.12);
+
+    transition: .3s ease;
+}
+
+.palette-card:hover {
+    transform: translateY(-6px);
+
+    border-color: rgba(107,231,255,.35);
+
+    box-shadow:
+        0 24px 50px rgba(0,0,0,.32),
+        0 0 35px rgba(217,92,255,.18);
+}
+
+
+/* ---------- Image ---------- */
+
+.palette-card-image {
+    width: 100%;
+    aspect-ratio: 1 / 1;
+
+    overflow: hidden;
+    background: #111;
+}
+.palette-card-image img {
+    width: 100%;
+    height: 100%;
+
+    display: block;
+
+    object-fit: cover;
+
+    transition: .35s ease;
+}
+
+.palette-card:hover .palette-card-image img {
+    transform: scale(1.02);
+}
+
+
+/* ---------- Contenu ---------- */
+
+.palette-card-content {
+    padding: 26px;
+}
+
+.palette-card-header {
+    display: flex;
+    align-items: baseline;
+
+    gap: 16px;
+
+    margin-bottom: 24px;
+}
+
+.palette-card-header span {
+    color: var(--cyan);
+
+    font-size: 12px;
+    letter-spacing: 2px;
+}
+
+.palette-card-header h2 {
+    margin: 0;
+
+    font-size: 20px;
+    font-weight: 500;
+
+    letter-spacing: 1px;
+}
+
+
+/* ---------- Couleurs ---------- */
+
+.palette-colors {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+
+    gap: 10px;
+}
+
+.palette-color {
+    padding: 0;
+
+    border: 0;
+
+    color: rgba(255,255,255,.72);
+
+    background: none;
+
+    cursor: pointer;
+
+    font-family: inherit;
+}
+
+.palette-color span {
+    display: block;
+
+    width: 100%;
+    aspect-ratio: 1;
+
+    margin-bottom: 8px;
+
+    border-radius: 8px;
+
+    background: var(--swatch);
+
+    border: 1px solid rgba(255,255,255,.12);
+
+    transition: .2s ease;
+}
+
+.palette-color:hover span {
+    transform: translateY(-3px);
+
+    box-shadow: 0 8px 18px rgba(0,0,0,.25);
+}
+
+.palette-color small {
+    font-size: 10px;
+    letter-spacing: .5px;
+}
+
+.palette-copy-message {
+    min-height: 20px;
+
+    margin: 16px 0 0;
+
+    text-align: center;
+
+    color: var(--cyan);
+
+    font-size: 12px;
+    letter-spacing: 1px;
+}
+
+
+/* ---------- Responsive ---------- */
+
+@media (max-width: 900px) {
+
+    .palettes-hero {
+        padding: 80px 28px 60px;
+    }
+
+    .palettes-section {
+        padding: 20px 28px 90px;
+    }
+
+    .palette-gallery {
+        grid-template-columns: 1fr;
+    }
+
+}
+
+@media (max-width: 520px) {
+
+    .palette-colors {
+        gap: 6px;
+    }
+
+    .palette-card-content {
+        padding: 20px;
+    }
+
+    .palette-color small {
+        font-size: 8px;
+    }
+    .palette-gallery {
+    grid-template-columns: 1fr;
+}
+
+.palette-card {
+    width: 100%;
+    max-width: 500px;
+    margin: 0 auto;
+}
+
+}

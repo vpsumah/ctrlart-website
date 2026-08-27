@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Palettes de couleurs | CTRL Art</title>
+
+    <meta
+        name="description"
+        content="Découvrez les palettes de couleurs créées par CTRL Art, inspirées par des images, des ambiances et des univers visuels variés."
+    >
+
+    <link rel="stylesheet" href="Style.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link
+        href="https://fonts.googleapis.com/css2?family=Aguafina+Script&family=Antonio:wght@300;400&family=Inter:wght@300;400;500;600;700&family=Montserrat:wght@400;500;600&display=swap"
+        rel="stylesheet"
+    >
+
+    <script src="https://unpkg.com/lucide@latest"></script>
+</head>
+
+<body>
+
+<header class="site-header">
+
+    <a href="index.html" class="site-logo">
+        CTRL <span>//</span> Art
+    </a>
+
+    <nav class="main-nav">
+        <a href="index.html">Accueil</a>
+        <a href="projects.html">Projets</a>
+        <a href="palettes.html" class="active">Palettes</a>
+        <a href="index.html#about">À propos</a>
+        <a href="index.html#services">Services</a>
+        <a href="index.html#contact">Contact</a>
+    </nav>
+
+</header>
+
+<main class="palettes-page">
+
+    <section class="palettes-hero">
+
+        <p class="section-label">
+            Ressources visuelles
+        </p>
+
+        <h1>Palettes de couleurs</h1>
+
+        <p>
+            Des combinaisons inspirées par les images, les ambiances
+            et parfois les idées un peu niaiseuses qui nous passent par la tête.
+        </p>
+
+    </section>
+
+
+    <section class="palettes-section">
+
+        <div class="palette-gallery">
+
+            <!-- PALETTE 01 -->
+
+            <article class="palette-card">
+
+                <div class="palette-card-image">
+                    <img
+                        src="assets/images/palettes/vache-qui-rit-pas.jpg"
+                        alt="Palette La vache qui rit pas"
+                    >
+                </div>
+
+                <div class="palette-card-content">
+
+                    <div class="palette-card-header">
+                        <span>01</span>
+                        <h2>La vache qui rit pas</h2>
+                    </div>
+
+                    <div class="palette-colors">
+
+                        <button
+                            class="palette-color"
+                            style="--swatch:#FEE3D4;"
+                            data-color="#FEE3D4"
+                            title="Copier #FEE3D4"
+                        >
+                            <span></span>
+                            <small>#FEE3D4</small>
+                        </button>
+
+                        <button
+                            class="palette-color"
+                            style="--swatch:#FFA245;"
+                            data-color="#FFA245"
+                            title="Copier #FFA245"
+                        >
+                            <span></span>
+                            <small>#FFA245</small>
+                        </button>
+
+                        <button
+                            class="palette-color"
+                            style="--swatch:#48757B;"
+                            data-color="#48757B"
+                            title="Copier #48757B"
+                        >
+                            <span></span>
+                            <small>#48757B</small>
+                        </button>
+
+                        <button
+                            class="palette-color"
+                            style="--swatch:#794529;"
+                            data-color="#794529"
+                            title="Copier #794529"
+                        >
+                            <span></span>
+                            <small>#794529</small>
+                        </button>
+
+                        <button
+                            class="palette-color"
+                            style="--swatch:#333333;"
+                            data-color="#333333"
+                            title="Copier #333333"
+                        >
+                            <span></span>
+                            <small>#333333</small>
+                        </button>
+
+                    </div>
+
+                    <p class="palette-copy-message"></p>
+
+                </div>
+
+            </article>
+
+
+            <!--
+            COPIE CE BLOC POUR AJOUTER UNE AUTRE PALETTE
+
+            <article class="palette-card">
+                ...
+            </article>
+            -->
+
+        </div>
+
+    </section>
+
+</main>
+
+
+<footer class="site-footer">
+
+    <p class="footer-copy">
+        © CTRL Art Studio
+    </p>
+
+</footer>
+
+
+<script>
+    lucide.createIcons();
+
+    const paletteColors = document.querySelectorAll(".palette-color");
+
+    paletteColors.forEach(button => {
+
+        button.addEventListener("click", async () => {
+
+            const color = button.dataset.color;
+
+            try {
+                await navigator.clipboard.writeText(color);
+
+                const card = button.closest(".palette-card");
+                const message = card.querySelector(".palette-copy-message");
+
+                message.textContent = `${color} copié!`;
+
+                setTimeout(() => {
+                    message.textContent = "";
+                }, 1500);
+
+            } catch {
+                console.log("Impossible de copier la couleur.");
+            }
+
+        });
+
+    });
+</script>
+
+</body>
+</html>
