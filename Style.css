@@ -2774,20 +2774,17 @@ img {
 
 .palette-card-image {
     width: 100%;
-    aspect-ratio: 1 / 1;
-
-    overflow: hidden;
     background: #111;
+    overflow: hidden;
 }
+
 .palette-card-image img {
     width: 100%;
-    height: 100%;
+    height: auto;
 
     display: block;
 
-    object-fit: cover;
-
-    transition: .35s ease;
+    object-fit: contain;
 }
 
 .palette-card:hover .palette-card-image img {
